@@ -1,18 +1,167 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Nattikorn's CV</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Nattikorn</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Intro</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#education">Education </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skill </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#hobby">Hobby </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
+      <h1 class="landing-header">
+        SOFTWARE ENGINEER STUDENT PASSION AND EXPERIENCE.
+      </h1>
+      <div class="container row">
+        <div class="col-12 col-lg-4 left-information">
+          <img src="./assets/images/profile.png" id="my-image" />
+          <h2 id="name">Nattikorn Sae&#8209;sue</h2>
+          <p id="summary">
+            High-achieving Software Engineering Sophomore at the College of
+            Arts, Media and Technology.
+          </p>
+          <dl class="biography-section">
+            <li class="row biography-list">
+              <div class="col-6 left-section">
+                <p>Date of Birth:</p>
+              </div>
+              <div class="col-6 right-section">
+                <p>28 August 2005</p>
+              </div>
+            </li>
+            <li class="row biography-list">
+              <div class="col-6 left-section">
+                <p>Language:</p>
+              </div>
+              <div class="col-6 right-section">
+                <p>Thai&nbsp;(Native) English&nbsp;(C1)</p>
+              </div>
+            </li>
+            <li class="row biography-list">
+              <div class="col-6 left-section">
+                <p>Interests:</p>
+              </div>
+              <div class="col-6 right-section">
+                <p>Software Engineer, QA</p>
+              </div>
+            </li>
+          </dl>
+        </div>
+        <div class="col-12 col-lg-8 right-information">
+          <div class="info-container">
+            <div class="header-container">
+              <h2>Experience</h2>
+            </div>
+            <div class="row information-row">
+              <div class="col-8">
+                <h3>Teaching Assistant</h3>
+                <p>College of Arts, Media and Technology.</p>
+              </div>
+              <div class="col-4">
+                <p class="period">Nov 2025 - PRESENT</p>
+              </div>
+              <div class="row experience-info">
+                <div class="col-12">
+                  <ul>
+                    <li>
+                      <p>953102 Abstract Data Type and Problem Solving</p>
+                    </li>
+                    <li>
+                      <p>953202 Introduction to Software Engineering</p>
+                    </li>
+                  </ul>
+                  <p>
+                    Evaluated programming assignments and document assignment
+                    and provinding detailed feedback. Facilitated interactive
+                    workshop sessions, guiding students through the Software
+                    Development Life Cycle (SDLC) from requirements gathering to
+                    testing.
+                  </p>
+                </div>
+              </div>  
+            </div>
+            <div class="break-line"></div>
+            <div class="row information-row">
+              <div class="col-8">
+                <h3>Motoropedia Project <a href="https://github.com/collapseeee/Motoropedia-Project">(GitHub)</a></h3>
+                <p>SE212 Database System and Database System Design</p>
+              </div>
+              <div class="col-4">
+                <p class="period">2025</p>
+              </div>
+              <div class="row experience-info">
+                <div class="col-12"></div>
+                  <p>
+                    A web-based motorsport encyclopedia designed to help users explore detailed information about various motorsport categories, tournaments, teams, racers, cars, and staff members. The project demonstrates database design principles, RESTful API development, and frontend-backend integration using modern web technologies.
+                  </p>
+                  <p>Working as Front-end Developer. Designed and implemented web page using React.js to display MySQL data that are requested from RESTful APIs.</p>
+                </div>
+              </div>  
+            </div>
 
+          </div>
+          <div class="info-container">
+            <div class="header-container">
+              <h2>Education</h2>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
