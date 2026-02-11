@@ -1,6 +1,14 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+a {
+    display: inline-block; 
+    transition: transform 0.3s ease; 
+    text-decoration: none;
+}
+a:hover {
+    transform: scale(1.2);
+}
 .landing-header {
     text-align: center;
     margin: 5% 10%;
@@ -8,7 +16,7 @@ body {
 }
 .container {
     width: 80%;
-    margin: 5% 10%;
+    margin: 5% auto;
 }
 
 /* Left Content */
@@ -25,6 +33,7 @@ body {
     margin-top: 5%;
     hyphens: auto;
     overflow-wrap: break-word;
+    font-size: 2.5rem;
 }
 .container #summary {
     width: 100%;
@@ -52,7 +61,8 @@ body {
     border-bottom: 1px solid;
 }
 .header-container h2 {
-    text-align: right;
+    text-align: center;
+    font-size: 2.5rem;
 }
 .info-container {
     margin-bottom: 2%;
