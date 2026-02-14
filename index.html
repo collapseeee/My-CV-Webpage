@@ -14,7 +14,7 @@
 <body>
   <header>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Nattikorn</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -91,7 +91,7 @@
             </dl>
           </div>
           <!-- Contact -->
-          <div class="contact-container">
+          <div class="contact-container" id="contact">
             <div class="header-container">
               <h2>Contact</h2>
             </div>
@@ -112,12 +112,32 @@
                   <p>+66 88 806 7959</p>
                 </div>
               </li>
-              <li class="row social-contact-list">
-                <p>
-                  <i class="fa fa-github"></i>
-                  <a href="https://github.com/collapseeee/">collapseeee</a>
-                </p>
-              </li>
+              <div class="social-contact-section">
+                <li class="row social-contact-list">
+                  <div class="col-12">
+                    <p>
+                      <i class="fa fa-github"></i>
+                      <a href="https://github.com/collapseeee/">collapseeee</a>
+                    </p>
+                  </div>
+                </li>
+                <li class="row social-contact-list">
+                  <div class="col-12">
+                    <p>
+                      <i class="fa fa-linkedin"></i>
+                      <a href="https://www.linkedin.com/in/nattikorn/">Nattikorn Sae-sue</a>
+                    </p>
+                  </div>
+                </li>
+                <li class="row social-contact-list">
+                  <div class="col-12">
+                    <p>
+                      <i class="fa fa-instagram"></i>
+                      <a href="https://www.instagram.com/nattikorned">@nattikorned</a>
+                    </p>
+                  </div>
+                </li>
+              </div>
             </dl>
           </div>
         </div>
@@ -279,39 +299,162 @@
               </div>
             </div>
           </div>
-          <!-- Education -->
-          <div class="info-container">
-            <div class="header-container">
-              <h2>Education</h2>
+          <!-- Education & Certificates-->
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <!-- Education -->
+              <div class="info-container" id="education">
+                <div class="header-container">
+                  <h2>Education</h2>
+                </div>
+                <!-- Education 1: CMU -->
+                <div class="row information-row">
+                  <div class="col-8">
+                    <h3>Chiang Mai University</h3>
+                    <p>College of Arts, Media and Technology.<br>Bachelor of Science Program in Software Engineering
+                      (International Program)</p>
+                  </div>
+                  <div class="col-4">
+                    <p class="period">2024 - PRESENT <br><span class="gpa">(GPA: 4.00)</span></p>
+                  </div>
+                </div>
+                <div class="break-line"></div>
+                <!-- Education 2: CRMS6 -->
+                <div class="row information-row">
+                  <div class="col-8">
+                    <h3>Chiang Rai Municipality School 6 (Highschool)</h3>
+                    <p>Science-Math Program in Engineering and Applied Science</p>
+                  </div>
+                  <div class="col-4">
+                    <p class="period">2021 - 2024<br><span class="gpa">(GPA: 3.96)</span></p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!-- Education 1: CMU -->
-            <div class="row information-row">
-              <div class="col-8">
-                <h3>Chiang Mai University</h3>
-                <p>College of Arts, Media and Technology.<br>Bachelor of Science Program in Software Engineering
-                  (International Program)</p>
-              </div>
-              <div class="col-4">
-                <p class="period">2024 - PRESENT <br>GPA: 4.00</p>
+            <div class="col-12 col-sm-6">
+              <!-- Certificates -->
+              <div class="info-container" id="certificates">
+                <div class="header-container">
+                  <h2>Certificates</h2>
+                </div>
+                <!-- List of certificates-->
+                <div class="row information-row">
+                  <div class="col-8">
+                    <h3>A certificate</h3>
+                    <p>Description of the certificate / Issuer</p>
+                  </div>
+                  <div class="col-4">
+                    <p class="period">Year</p>
+                  </div>
+                </div>
+                <div class="break-line"></div>
+                <div class="row information-row">
+                  <div class="col-8">
+                    <h3>A certificate</h3>
+                    <p>Description of the certificate / Issuer</p>
+                  </div>
+                  <div class="col-4">
+                    <p class="period">Year</p>
+                  </div>
+                </div>
+                <div class="break-line"></div>
+                <div class="row information-row">
+                  <div class="col-8">
+                    <h3>A certificate</h3>
+                    <p>Description of the certificate / Issuer</p>
+                  </div>
+                  <div class="col-4">
+                    <p class="period">Year</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="break-line"></div>
-            <!-- Education 2: CRMS6 -->
-            <div class="row information-row">
-              <div class="col-8">
-                <h3>Chiang Rai Municipality School 6 (Highschool)</h3>
-                <p>Science-Math Program in Engineering and Applied Science</p>
+          </div>
+          <!-- Skills & Hobby-->
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <!-- Skills -->
+              <div class="info-container" id="skills">
+                <div class="header-container">
+                  <h2>Skills</h2>
+                </div>
+                <!-- List of skills and its bar-->
+                <dl>
+                  <li class="row contact-list">
+                    <div class="col-4 left-section">
+                      <p>Java:</p>
+                    </div>
+                    <div class="col-8 right-section">
+                      Insert Bar Later
+                    </div>
+                  </li>
+                  <li class="row contact-list">
+                    <div class="col-4 left-section">
+                      <p>Python:</p>
+                    </div>
+                    <div class="col-8 right-section">
+                      Insert Bar Later
+                    </div>
+                  </li>
+                  <li class="row contact-list">
+                    <div class="col-4 left-section">
+                      <p>JavaScript:</p>
+                    </div>
+                    <div class="col-8 right-section">
+                      Insert Bar Later
+                    </div>
+                  </li>
+                  <li class="row contact-list">
+                    <div class="col-4 left-section">
+                      <p>HTML:</p>
+                    </div>
+                    <div class="col-8 right-section">
+                      Insert Bar Later
+                    </div>
+                  </li>
+                  <li class="row contact-list">
+                    <div class="col-4 left-section">
+                      <p>CSS:</p>
+                    </div>
+                    <div class="col-8 right-section">
+                      Insert Bar Later
+                    </div>
+                  </li>
+                </dl>
               </div>
-              <div class="col-4">
-                <p class="period">2021 - 2024<br>GPA: 3.96</p>
+            </div>
+            <div class="col-12 col-sm-6">
+              <!-- Hobby -->
+              <div class="info-container" id="hobby">
+                <div class="header-container">
+                  <h2>Hobby</h2>
+                </div>
+                <dl>
+                  <li class="row contact-list">
+                    <div class="col-4 left-section">
+                      <p>Hobby:</p>
+                    </div>
+                    <div class="col-8 right-section">
+                      <p>Programming, Gaming, Reading</p>
+                    </div>
+                  </li>
+                </dl>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    </div>
   </main>
+  <footer>
+    <div class=" footer-container row">
+      <div class="col-12 col-md-6 left-section">
+        <p>© 2026 Nattikorn Sae-sue.&nbsp;All rights reserved.</p>
+      </div>
+      <div class="col-12 col-md-6 right-section">
+        <p>For SE262 Front-end Web Development Foundation</p>
+      </div>
+    </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
