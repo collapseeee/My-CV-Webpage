@@ -7,6 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="./css/styles.css" />
   <title>Nattikorn's CV</title>
 </head>
@@ -24,7 +25,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#experience">Experience</a>
+              <a class="nav-link" href="#experience">Experience</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact </a>
@@ -41,6 +42,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#portfolio">Portfolio </a>
             </li>
+            <button class="btn btn-outline-secondary" id="theme-toggle" type="button">
+              <i class="fa fa-moon-o" id="theme-icon"></i>
+            </button>
           </ul>
         </div>
       </div>
@@ -49,7 +53,7 @@
 
   <!-- Main Body -->
   <main>
-    <h1 class="landing-header">
+    <h1 class="landing-header animate__animated animate__backInDown">
       SOFTWARE ENGINEER STUDENT PASSION AND EXPERIENCE.
     </h1>
     <div class="container">
@@ -60,8 +64,10 @@
             <img src="./assets/images/profile.png" id="my-image" />
             <h2 id="name">Nattikorn Sae&#8209;sue</h2>
             <p id="summary">
-              High-achieving Software Engineering Sophomore at the College of
-              Arts, Media and Technology.
+              <strong>High-achieving Software Engineering student</strong> with a 4.00 GPA and experience as a Teaching
+              Assistant.
+              I have build some real-world applications using <strong>Java, React, and MySQL</strong>, focusing on clean
+              architecture, usability, reliability, and efficient problem-solving.
             </p>
             <dl class="biography-dl">
               <li class="row biography-list">
@@ -139,6 +145,32 @@
                 </li>
               </div>
             </dl>
+            <!-- Send message button -->
+            <div class="text-center">
+              <button class="btn btn-primary" id="send-message-button">Send me a Message</button>
+            </div>
+            <div class="send-message-container mt-6">
+              <div class="text-end pb-1">
+                <button type="button" class="btn-close" id="message-close-button"></button>
+              </div>
+              <div class="form-container">
+                <form id="send-message-form">
+                  <div class="mb-2">
+                    <label for="userEmail" class="form-label">Your Email:</label>
+                    <input type="email" class="form-control" id="userEmail" required placeholder="name@example.com">
+                  </div>
+                  <div class="mb-2">
+                    <label for="subjectText" class="form-label">Subject:</label>
+                    <input class="form-control" id="subjectText" required></input>
+                  </div>
+                  <div class="mb-2">
+                    <label for="messageText" class="form-label">Message:</label>
+                    <textarea class="form-control" id="messageText" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">Submit Message</button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
         <!-- Experience -->
@@ -563,14 +595,14 @@
                     learn new
                     things.</p>
                   <div class="hobby-tags-container">
-                    <span class="badge rounded-pill border px-3 py-2 my-1 mx-1">Music</span>
-                    <span class="badge rounded-pill border px-3 py-2 my-1 mx-1">Drums</span>
-                    <span class="badge rounded-pill border px-3 py-2 my-1 mx-1">Learning</span>
-                    <span class="badge rounded-pill border px-3 py-2 my-1 mx-1">Pet Lover</span>
-                    <span class="badge rounded-pill border px-3 py-2 my-1 mx-1">Gaming</span>
-                    <span class="badge rounded-pill border px-3 py-2 my-1 mx-1">Development</span>
-                    <span class="badge rounded-pill border px-3 py-2 my-1 mx-1">Technology</span>
-                    <span class="badge rounded-pill border px-3 py-2 my-1 mx-1">Politics</span>
+                    <span class="badge rounded-pill border px-3 py-2 my-1 mx-1 text-body">Music</span>
+                    <span class="badge rounded-pill border px-3 py-2 my-1 mx-1 text-body">Drums</span>
+                    <span class="badge rounded-pill border px-3 py-2 my-1 mx-1 text-body">Learning</span>
+                    <span class="badge rounded-pill border px-3 py-2 my-1 mx-1 text-body">Pet Lover</span>
+                    <span class="badge rounded-pill border px-3 py-2 my-1 mx-1 text-body">Gaming</span>
+                    <span class="badge rounded-pill border px-3 py-2 my-1 mx-1 text-body">Development</span>
+                    <span class="badge rounded-pill border px-3 py-2 my-1 mx-1 text-body">Technology</span>
+                    <span class="badge rounded-pill border px-3 py-2 my-1 mx-1 text-body">Politics</span>
                   </div>
                 </div>
               </div>
@@ -662,6 +694,7 @@
     </div>
   </main>
   <footer>
+    <a href="#" id="totop-button"><i class="fa fa-arrow-circle-up text-body"></i></a>
     <div class=" footer-container row">
       <div class="col-12 col-md-6 left-section">
         <p>© 2026 Nattikorn Sae-sue.&nbsp;All rights reserved.</p>
@@ -674,6 +707,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
